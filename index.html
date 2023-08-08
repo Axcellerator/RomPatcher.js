@@ -7,7 +7,7 @@
 	<meta name="keywords" content="ips,ups,aps,bps,rup,ninja,ppf,xdelta,patcher,online,html5,web,rom,patch,hack,translation"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
 	<link rel="manifest" href="./manifest.json"/>
-	<link rel="shortcut icon" href="./style/app_icon_16.png" type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="./style/favicon.ico" type="image/png" sizes="16x16"/>
 	<link rel="shortcut icon" href="./style/app_icon_192.png" type="image/png" sizes="192x192"/>
 	<!-- iOS icons -->
 	<link rel="apple-touch-icon" sizes="57x57" href="./style/app_icon_114.png" />
@@ -64,15 +64,62 @@
         ];
 	--></script>
 </head>
-<body><div id="column">
-
-
-<!-- HEADER -->
-<header><img src="./style/logo.png" /><h1>Rom Patcher JS</h1></header>
+  <body>
+    <div id="column">
+      <!-- HEADER -->
+      <header>
+		<img class="logo" src="./style/logo.png" />
+	</header>
 
 <!-- APP -->
 <div id="wrapper">
 	<div id="switch-container"><span id="switch-create-button" class="button-outer"><span data-localize="creator_mode">Creator mode</span> <span id="switch-create" class="switch disabled"></span></span></div>
+	<div class="inner-wrapper">
+
+	<div class="tab documentation-wrapper">
+		<h2>Documentation:</h2>
+
+		<div class="row m-b flex">
+			<p>Changelog:</p>
+			<a
+				href="https://drive.google.com/u/0/uc?id=15P5yZacSx2xb9clIZChszs0AvcKqC16S&export=download"
+				class="button"
+			>
+				Download
+			</a>
+		</div>
+
+		<div class="row m-b flex">
+			<p>README:</p>
+			<a
+				href="https://drive.google.com/u/0/uc?id=15PaW6BzN0v0D09QHxurwXHHDV0sf8gT-&export=download"
+				class="button"
+			>
+				Download
+			</a>
+		</div>
+
+		<div class="row m-b flex">
+			<p>Pokemon_Encounters_1.3:</p>
+			<a
+				href="https://drive.google.com/u/0/uc?id=15Gu61rNRXf78fB446m2lUQwJVUbUEtXh&export=download"
+				class="button"
+			>
+				Download
+			</a>
+		</div>
+
+		<div class="row m-b flex">
+			<p>Eeveelutions:</p>
+			<a
+				href="https://drive.google.com/u/0/uc?id=15VvFgQj9wAzLQRsZwQLiUSRVMmBVZJky&export=download"
+				class="button"
+			>
+				Download
+			</a>
+		</div>
+
+	</div>
 
 	<div id="tab0" class="tab">
 		<div class="row m-b">
@@ -112,8 +159,6 @@
 		</div>
 	</div>
 
-
-
 	<div id="tab1" class="tab">
 		<div class="row m-b">
 			<div class="leftcol text-right"><label for="input-file-rom1" data-localize="original_rom" >Original ROM:</label></div>
@@ -148,11 +193,9 @@
 			<button id="button-create" class="disabled" disabled data-localize="create_patch">Create patch</button>
 		</div>
 	</div>
+
+	</div>
 </div>
-
-
-
-
 
 <!-- FOOTER -->
 <footer>
@@ -167,7 +210,6 @@
 </footer>
 
 </div>
-
 
 <!-- SETTINGS DIALOG -->
 <div id="dialog-backdrop">
